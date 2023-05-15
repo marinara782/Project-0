@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            .grid {
+                display: grid;
+                grid-column-gap: 20px;
+                grid-row-gap: 10px;
+                grid-template-columns: 200px 200px;
+            }
+
+            .grid-item {
+                font-size: 13px;
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: left;
+                margin-left: 10px;
+            }
+
+            .textbox{
+                border-radius: 1px;
+                border: 1px solid #d9d9d9;
+                border-top: 1px solid #c0c0c0;
+                font-size: 13px;
+                height: 25px;
+                padding: 1px 8px;
+                width: 500px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <a href="image.html">Image Search</a>
+            <a href="Index.html">Google Search</a>
+        </div>
+        <div class="label">
+            <label>Advanced Search</label>
+        </div>
+        <hr>
+        <div class="find">
+            <label>Find pages with...</label>
+        </div>
+        <form method="get" action="https://www.google.com/search">
+            <div class="grid">
+                <div class="grid-item">all of these words:</div>
+                <div class="grid-item"><input type="text" name="q"class="textbox"></div>
+                <div class="grid-item">this exact word or phrase:</div>
+                <div class="grid-item"><input type="text" name="q"class="textbox"></div>
+                <div class="grid-item">any of these words:</div>
+                <div class="grid-item"><input type="text" name="q" class="textbox"></div>
+                <div class="grid-item">none of these words:</div>
+                <div class="grid-item"><input type="text" name="q" class="textbox"></div>
+            </div>
+            <hr style="margin: 18px 0; border: 1px solid #ebebeb">
+            <input type="submit" value="Advanced Search" style=" cursor: pointer; height: 30px; margin: 10px 0; padding: 0 12px; background-color: #4d90fe; border: 1px solid #3079ed; color: white;">
+        </form>
+    </body>
+</html>
